@@ -28,8 +28,8 @@ K_G = Client(
 
 # Start Buttonu İcin Def Oluşturalım :)
 def button():
-	BUTTON=[[InlineKeyboardButton(text="👨🏻‍💻 Sahibem ",url="https://t.me/Baykaoss")]]
-	BUTTON+=[[InlineKeyboardButton(text="🌱 Sohbet&oyun 🌱",url="https://t.me/Soondurakk")]]
+	BUTTON=[[InlineKeyboardButton(text="👨🏻‍💻 Sahibim ",url="https://t.me/magandasahip")]]
+	BUTTON+=[[InlineKeyboardButton(text="🌱 Sohbet&oyun 🌱",url="https://t.me/SohbetZirve")]]
 	return InlineKeyboardMarkup(BUTTON)
 
 # Kullanıcı Start Komutunu Kullanınca Selam'layalım :)
@@ -37,7 +37,7 @@ def button():
 async def _(client, message):
 	user = message.from_user # Kullanıcın Kimliğini Alalım
 
-	await message.reply_text(text="**Merhaba {}!**\n\n__Ben Online Eğlence Botuyum:) \nMusic botumuzu denediniz mi @Esmermusic_bot  Oyun Komutu => /dc".format(
+	await message.reply_text(text="**Merhaba {}!**\n\n__Ben Online Eğlence Botuyum:)  Oyun Komutu => /dc".format(
 		user.mention, # Kullanıcı'nın Adı
 		),
 	disable_web_page_preview=True, # Etiketin Önizlemesi Olmaması İcin Kullanıyoruz
